@@ -51,10 +51,6 @@ class ProjectState extends State<Project>{
 
     this.instance = new ProjectState();
     return this.instance;
-  }
-
-  addListener(listenerFn: Listener) {
-    this.listeners.push(listenerFn);
   } 
 
   addProject(title: string, description: string, numOfPeople: number) {
