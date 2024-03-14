@@ -23,7 +23,6 @@ class Project {
   }
 }
 
-
 type Listener<T> = (items: Project[]) => void;
 
 class State<T> {
@@ -33,7 +32,6 @@ class State<T> {
     this.listeners.push(listenerFn);
   }
 }
-
 
 class ProjectState extends State<Project>{
   private projects:Project[] = [];
